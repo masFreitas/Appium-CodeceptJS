@@ -1,0 +1,15 @@
+{
+  "name": "qazando-automation",
+  "version": "1.0.0",
+  "description": "Projeto de automacao codeceptjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run --steps"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.3.2",
+    "webdriverio": "^7.19.5"
+  }
+}
