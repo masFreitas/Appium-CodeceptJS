@@ -27,5 +27,4 @@ module.exports = {
     I.seeElement(this.message.loginError)
   }
 
-
 }
