@@ -12,19 +12,6 @@ Before (() => {
 
 });
 
-Scenario('Login with success', ({ I, homePage }) => {
-    loginPage.doLogin('teste@teste.com', '123456')
-
-    pause() //"interactive debugger"
-
-    homePage.checkLoginSuccess()
-});
-
-Scenario('Login with error', ({ I }) => {
-    loginPage.doLogin('xteste@teste.com', '123456')
-    loginPage.checkLoginError()
-});
-
 AfterSuite (() => {
     console.log("After Suite")
 
@@ -33,4 +20,14 @@ AfterSuite (() => {
 After (() => {
     console.log("After")
 
+});
+
+Scenario('Login with success', ({ I, homePage }) => {
+    loginPage.doLogin('teste@teste.com', '123456')
+    homePage.checkLoginSuccess()
+});
+
+Scenario('Login with error', ({ I }) => {
+    loginPage.doLogin('xteste@teste.com', '123456')
+    loginPage.checkLoginError()
 });

@@ -17,7 +17,7 @@ module.exports = {
 
   doLogin(email, password) {
     I.waitForElement(this.fields.email, 5)
-    I.retry(4).fillField(this.fields.email, email) //retry 4 times the same action
+    I.fillField(this.fields.email, email) //retry 4 times the same action
     I.fillField(this.fields.password, password)
     I.tap(this.button.enter)
   },
