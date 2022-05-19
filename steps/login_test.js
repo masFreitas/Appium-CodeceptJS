@@ -14,6 +14,9 @@ Before (() => {
 
 Scenario('Login with success', ({ I, homePage }) => {
     loginPage.doLogin('teste@teste.com', '123456')
+
+    pause() //"interactive debugger"
+
     homePage.checkLoginSuccess()
 });
 
