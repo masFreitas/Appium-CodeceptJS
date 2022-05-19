@@ -7,7 +7,7 @@ setHeadlessWhen(process.env.HEADLESS);
 // enable all common plugins https://github.com/codeceptjs/configure#setcommonplugins
 setCommonPlugins();
 
-const server = require('C:\\Users\\mateu\\Documents\\CodeceptJSAppium\\qazando-automation\\server.js')
+const server = require('./server/server.js')
 
 exports.config = {
   tests: './steps/*_test.js',
