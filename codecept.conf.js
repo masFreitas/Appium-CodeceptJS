@@ -16,8 +16,8 @@ exports.config = {
   },
   include: {
     I: './steps_file.js',
-    loginPage: './pages/login_page.js',
-    homePage: './pages/home_page.js'
+    login_page: './pages/login_page.js',
+    home_page: './pages/home_page.js'
   },
   mocha: {},
   bootstrap: async () => {
@@ -61,6 +61,6 @@ exports.config = {
       timeout: 0
     }
   ],
-//  tests: './steps/*_test.js',
+  tests: './steps/*_test.js',
   name: 'qazando-automation'
 }
