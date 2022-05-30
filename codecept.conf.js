@@ -50,7 +50,9 @@ exports.config = {
       enabled: true
     },
     pauseOnFail: {},
-    allure: {}
+    allure: {
+      "enabled": true
+    }
   },
   stepTimeout: 0,
   stepTimeoutOverride: [{
