@@ -1,0 +1,103 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653954485180' stop='1653954504877'>
+    <name>students:</name>
+    <title>students:</title>
+    <test-cases>
+        <test-case start='1653954485180' status='passed' stop='1653954504364'>
+            <name>Add student with success</name>
+            <title>Add student with success</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1653954494916' status='passed' stop='1653954498344'>
+                    <name>login_page: doLogin "teste@teste.com", "123456"</name>
+                    <title>login_page: doLogin "teste@teste.com", "123456"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653954494916' status='passed' stop='1653954496040'>
+                            <name>I wait for element "~email", 5</name>
+                            <title>I wait for element "~email", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653954496041' status='passed' stop='1653954496617'>
+                            <name>I fill field "~email", "teste@teste.com"</name>
+                            <title>I fill field "~email", "teste@teste.com"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653954496617' status='passed' stop='1653954497682'>
+                            <name>I fill field "~senha", "123456"</name>
+                            <title>I fill field "~senha", "123456"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653954497682' status='passed' stop='1653954498344'>
+                            <name>I tap "~entrar"</name>
+                            <title>I tap "~entrar"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653954498344' status='passed' stop='1653954502595'>
+                    <name>home_page: registerStudent "9090", "Fernando Silveira"</name>
+                    <title>home_page: registerStudent "9090", "Fernando Silveira"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653954498344' status='passed' stop='1653954499591'>
+                            <name>I wait for element "~salvar", 5</name>
+                            <title>I wait for element "~salvar", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653954499591' status='passed' stop='1653954500821'>
+                            <name>I fill field "~codigo", "9090"</name>
+                            <title>I fill field "~codigo", "9090"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653954500821' status='passed' stop='1653954501899'>
+                            <name>I fill field "~aluno", "Fernando Silveira"</name>
+                            <title>I fill field "~aluno", "Fernando Silveira"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653954501899' status='passed' stop='1653954502595'>
+                            <name>I tap "~salvar"</name>
+                            <title>I tap "~salvar"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653954502595' status='passed' stop='1653954504364'>
+                    <name>home_page: searchStudent "Fernando Silveira", "9090"</name>
+                    <title>home_page: searchStudent "Fernando Silveira", "9090"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653954502595' status='passed' stop='1653954503640'>
+                            <name>I fill field "~search", "Fernando Silveira"</name>
+                            <title>I fill field "~search", "Fernando Silveira"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653954503640' status='passed' stop='1653954504320'>
+                            <name>I wait for element "~9090", 5</name>
+                            <title>I wait for element "~9090", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653954504320' status='passed' stop='1653954504364'>
+                            <name>I see element "~9090"</name>
+                            <title>I see element "~9090"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

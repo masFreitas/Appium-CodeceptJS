@@ -49,7 +49,8 @@ exports.config = {
     eachElement: {
       enabled: true
     },
-    pauseOnFail: {}
+    pauseOnFail: {},
+    allure: {}
   },
   stepTimeout: 0,
   stepTimeoutOverride: [{
