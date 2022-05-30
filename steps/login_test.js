@@ -22,9 +22,9 @@ After (() => {
 
 });
 
-Scenario('Login with success', ({ I, homePage }) => {
+Scenario('Login with success', ({ I, home_page }) => {
     login_page.doLogin('teste@teste.com', '123456')
-    homePage.checkLoginSuccess()
+    home_page.checkLoginSuccess()
 });
 
 Scenario('Login with error', ({ I }) => {
