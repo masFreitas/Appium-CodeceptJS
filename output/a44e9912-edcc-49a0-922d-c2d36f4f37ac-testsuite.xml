@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653954437286' stop='1653954453655'>
+    <name>Business rules</name>
+    <title>Business rules</title>
+    <test-cases>
+        <test-case start='1653954437287' status='passed' stop='1653954453146'>
+            <name>Login with success</name>
+            <title>Login with success</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1653954447087' status='passed' stop='1653954449284'>
+                    <name>Given I fill email field </name>
+                    <title>Given I fill email field </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653954447087' status='passed' stop='1653954448186'>
+                            <name>I wait for element "~email", 5</name>
+                            <title>I wait for element "~email", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653954448186' status='passed' stop='1653954449283'>
+                            <name>I fill field "~email", "teste@teste.com"</name>
+                            <title>I fill field "~email", "teste@teste.com"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653954449284' status='passed' stop='1653954450858'>
+                    <name>And I fill password field </name>
+                    <title>And I fill password field </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653954449284' status='passed' stop='1653954450858'>
+                            <name>I fill field "~senha", "123456"</name>
+                            <title>I fill field "~senha", "123456"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653954450858' status='passed' stop='1653954451534'>
+                    <name>When I tap on Entrar </name>
+                    <title>When I tap on Entrar </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653954450858' status='passed' stop='1653954451534'>
+                            <name>I tap "~entrar"</name>
+                            <title>I tap "~entrar"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653954451534' status='passed' stop='1653954453146'>
+                    <name>Then I see the Salvar button </name>
+                    <title>Then I see the Salvar button </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653954451534' status='passed' stop='1653954453095'>
+                            <name>I wait for element "~salvar", 5</name>
+                            <title>I wait for element "~salvar", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653954453096' status='passed' stop='1653954453146'>
+                            <name>I see element "~salvar"</name>
+                            <title>I see element "~salvar"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
