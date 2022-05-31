@@ -19,7 +19,15 @@ exports.config = {
     login_page: './pages/login_page.js',
     home_page: './pages/home_page.js'
   },
-  mocha: {},
+  mocha: {
+
+    reporter: "mochawesome",
+    reporterOptions: {
+      reportFilename: "[status]_[datetime]-report",
+      timestamp: "longDate"
+    }
+
+  },
   bootstrap: async () => {
     await server.start();
   },
@@ -56,13 +64,13 @@ exports.config = {
   },
   stepTimeout: 0,
   stepTimeoutOverride: [{
-      pattern: 'wait.*',
-      timeout: 0
-    },
-    {
-      pattern: 'amOnPage',
-      timeout: 0
-    }
+    pattern: 'wait.*',
+    timeout: 0
+  },
+  {
+    pattern: 'amOnPage',
+    timeout: 0
+  }
   ],
   tests: './steps/*_test.js',
   name: 'qazando-automation'
