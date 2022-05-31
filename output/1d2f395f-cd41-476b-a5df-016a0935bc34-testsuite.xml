@@ -1,0 +1,125 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653957192654' stop='1653957224748'>
+    <name>login:</name>
+    <title>login:</title>
+    <test-cases>
+        <test-case start='1653957192660' status='passed' stop='1653957208529'>
+            <name>Login with success</name>
+            <title>Login with success</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1653957202651' status='passed' stop='1653957206578'>
+                    <name>login_page: doLogin "teste@teste.com", "123456"</name>
+                    <title>login_page: doLogin "teste@teste.com", "123456"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653957202651' status='passed' stop='1653957203762'>
+                            <name>I wait for element "~email", 5</name>
+                            <title>I wait for element "~email", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653957203762' status='passed' stop='1653957204868'>
+                            <name>I fill field "~email", "teste@teste.com"</name>
+                            <title>I fill field "~email", "teste@teste.com"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653957204868' status='passed' stop='1653957205897'>
+                            <name>I fill field "~senha", "123456"</name>
+                            <title>I fill field "~senha", "123456"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653957205897' status='passed' stop='1653957206578'>
+                            <name>I tap "~entrar"</name>
+                            <title>I tap "~entrar"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653957206578' status='passed' stop='1653957208529'>
+                    <name>home_page: checkLoginSuccess </name>
+                    <title>home_page: checkLoginSuccess </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653957206578' status='passed' stop='1653957207766'>
+                            <name>I wait for element "~salvar", 5</name>
+                            <title>I wait for element "~salvar", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653957207766' status='passed' stop='1653957208529'>
+                            <name>I see element "~salvar"</name>
+                            <title>I see element "~salvar"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1653957209180' status='passed' stop='1653957224139'>
+            <name>Login with error</name>
+            <title>Login with error</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1653957219081' status='passed' stop='1653957223438'>
+                    <name>login_page: doLogin "xteste@teste.com", "123456"</name>
+                    <title>login_page: doLogin "xteste@teste.com", "123456"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653957219081' status='passed' stop='1653957220189'>
+                            <name>I wait for element "~email", 5</name>
+                            <title>I wait for element "~email", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653957220190' status='passed' stop='1653957221250'>
+                            <name>I fill field "~email", "xteste@teste.com"</name>
+                            <title>I fill field "~email", "xteste@teste.com"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653957221250' status='passed' stop='1653957222777'>
+                            <name>I fill field "~senha", "123456"</name>
+                            <title>I fill field "~senha", "123456"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653957222777' status='passed' stop='1653957223438'>
+                            <name>I tap "~entrar"</name>
+                            <title>I tap "~entrar"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1653957223438' status='passed' stop='1653957224139'>
+                    <name>login_page: checkLoginError </name>
+                    <title>login_page: checkLoginError </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1653957223438' status='passed' stop='1653957223497'>
+                            <name>I wait for element "~lognFail", 5</name>
+                            <title>I wait for element "~lognFail", 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1653957223497' status='passed' stop='1653957224139'>
+                            <name>I see element "~lognFail"</name>
+                            <title>I see element "~lognFail"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

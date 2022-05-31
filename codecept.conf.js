@@ -28,10 +28,10 @@ exports.config = {
   },
   timeout: null,
   hooks: [],
-  gherkin: {
-    features: './features/*.feature',
-    steps: ['./step_definitions/login_steps.js']
-  },
+  // gherkin: {
+  //   features: './features/*.feature',
+  //   steps: ['./step_definitions/login_steps.js']
+  // },
   plugins: {
     screenshotOnFail: {
       enabled: true,

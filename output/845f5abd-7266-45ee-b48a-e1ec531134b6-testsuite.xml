@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653957067221' stop='1653957077765'>
+    <name>students:</name>
+    <title>students:</title>
+    <test-cases>
+        <test-case start='1653957067223' status='failed' stop='1653957076950'>
+            <name>Add student with success</name>
+            <title>Add student with success</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='e79d3d99-0240-4593-907e-950b1d8741af-attachment.png' type='image/png' size='35612'/>
+            </attachments>
+            <failure>
+                <message>Cannot access 'name' before initialization</message>
+                <stack-trace>ReferenceError: Cannot access 'name' before initialization
+                    at Test.&lt;anonymous> (C:\Users\mateu\Documents\CodeceptJSAppium\qazando-automation\steps\students_test.js:11:18)
+                    at Context.test.fn (C:\Users\mateu\Documents\CodeceptJSAppium\qazando-automation\node_modules\codeceptjs\lib\scenario.js:91:14)
+                    at callFnAsync (C:\Users\mateu\Documents\CodeceptJSAppium\qazando-automation\node_modules\codeceptjs\node_modules\mocha\lib\runnable.js:386:21)
+                    at Test.Runnable.run (C:\Users\mateu\Documents\CodeceptJSAppium\qazando-automation\node_modules\codeceptjs\node_modules\mocha\lib\runnable.js:330:7)
+                    at Runner.runTest (C:\Users\mateu\Documents\CodeceptJSAppium\qazando-automation\node_modules\codeceptjs\node_modules\mocha\lib\runner.js:621:10)
+                    at C:\Users\mateu\Documents\CodeceptJSAppium\qazando-automation\node_modules\codeceptjs\node_modules\mocha\lib\runner.js:745:12
+                    at next (C:\Users\mateu\Documents\CodeceptJSAppium\qazando-automation\node_modules\codeceptjs\node_modules\mocha\lib\runner.js:538:14)
+                    at C:\Users\mateu\Documents\CodeceptJSAppium\qazando-automation\node_modules\codeceptjs\node_modules\mocha\lib\runner.js:548:7
+                    at next (C:\Users\mateu\Documents\CodeceptJSAppium\qazando-automation\node_modules\codeceptjs\node_modules\mocha\lib\runner.js:430:14)
+                    at cbHookRun (C:\Users\mateu\Documents\CodeceptJSAppium\qazando-automation\node_modules\codeceptjs\node_modules\mocha\lib\runner.js:495:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
