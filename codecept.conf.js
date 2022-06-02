@@ -5,12 +5,12 @@ exports.config = {
   helpers: {
     Appium: {
       platform: 'Android',
-      app: 'C:\\Users\\mateu\\Documents\\CodeceptJSAppium\\APK\\appsqazando\\app-release.apk',
       desiredCapabilities: {
-        appPackage: 'com.qazandoapp',
-        appActivity: 'MainActivity',
+        // appPackage: 'com.qazandoapp',
+        // appActivity: 'MainActivity',
         deviceName: 'pixel2aula',
-        platformVersion: '9'
+        platformVersion: '9',
+        browserName: 'Chrome'
       }
     }
   },
@@ -72,6 +72,6 @@ exports.config = {
     timeout: 0
   }
   ],
-  tests: './steps/*_test.js',
+  tests: './steps/search_google_test.js',
   name: 'qazando-automation'
 }
