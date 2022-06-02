@@ -11,8 +11,9 @@ npm install
 ### To run test
 
 ```
-npm run test
+npx codeceptjs run --steps
 ```
+
 ## Report
 To use mochawesome (report), add the following command to the end of the run command
 ```
