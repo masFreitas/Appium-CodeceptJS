@@ -9,7 +9,7 @@ module.exports = {
   fields: {
     code: '~codigo',
     student: '~aluno',
-    search: '~search'
+    search: '~search',
   },
 
   checkLoginSuccess() {
@@ -29,5 +29,31 @@ module.exports = {
     I.waitForElement('~'+ check +'', 5)
     I.seeElement('~'+ check +'')
   },
+
+  seeStudent(code) {
+    I.waitForElement(this.fields.code, 5)
+    I.seeElement(this.fields.code)
+  },
+
+  scrollToSeeStudent(code) {
+    I.wait(5)
+
+    I.touchPerform([
+        {
+            action: 'longPress',
+            options: { x: 300 ,y: 1700 }
+        },
+        {
+            action: 'moveTo',
+            options: { x: 300 ,y: 880 }
+        },
+        {
+            action: 'release',
+        }
+    ])
+
+    I.waitForElement(this.fields.code, 5)
+    I.seeElement(this.fields.code)
+  }
 }
 
