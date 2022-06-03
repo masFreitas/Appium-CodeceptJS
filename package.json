@@ -4,7 +4,7 @@
   "description": "Projeto de automacao codeceptjs",
   "main": "index.js",
   "scripts": {
-    "test": "npx codeceptjs run --steps --reporter mochawesome"
+    "test": "npx codeceptjs run --steps"
   },
   "author": "",
   "license": "ISC",
