@@ -20,8 +20,7 @@ exports.config = {
     home_page: './pages/home_page.js'
   },
   mocha: {
-
-    reporter: "mochawesome",
+    reporter: "",
     reporterOptions: {
       reportFilename: "[status]_[datetime]-report",
       timestamp: "longDate"
